@@ -6,14 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ci": "payload migrate && pnpm build",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "generate:types": "payload generate:types"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "3.0.0-beta.3",
-    "@payloadcms/next": "3.0.0-beta.3",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.3",
+    "@payloadcms/db-postgres": "3.0.0-beta.5",
+    "@payloadcms/next": "3.0.0-beta.5",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.5",
+    "cross-env": "^7.0.3",
     "next": "14.1.4",
-    "payload": "3.0.0-beta.3",
+    "payload": "3.0.0-beta.5",
     "react": "^18",
     "react-dom": "^18"
   },
