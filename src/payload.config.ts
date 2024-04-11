@@ -1,14 +1,14 @@
-import { postgresAdapter } from "@payloadcms/db-postgres";
-import { lexicalEditor } from "@payloadcms/richtext-lexical"; // editor-import
-import path from "path";
+import { postgresAdapter } from '@payloadcms/db-postgres'
+import { lexicalEditor } from '@payloadcms/richtext-lexical' // editor-import
+import path from 'path'
 import sharp from 'sharp'
-import { buildConfig } from "payload/config";
-import { fileURLToPath } from "url";
+import { buildConfig } from 'payload/config'
+import { fileURLToPath } from 'url'
 
-import { Users } from "./collections/Users";
+import { Users } from './collections/Users'
 
-const filename = fileURLToPath(import.meta.url);
-const dirname = path.dirname(filename);
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
 
 export default buildConfig({
   admin: {
@@ -16,9 +16,9 @@ export default buildConfig({
   },
   collections: [Users],
   editor: lexicalEditor({}),
-  secret: process.env.PAYLOAD_SECRET || "",
+  secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
-    outputFile: path.resolve(dirname, "payload-types.ts"),
+    outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
   db: postgresAdapter({
     pool: {
@@ -28,5 +28,4 @@ export default buildConfig({
   // TODO: Vercel Blob Storage
 
   sharp,
-
-});
+})
