@@ -1,6 +1,7 @@
 import { postgresAdapter } from "@payloadcms/db-postgres";
 import { lexicalEditor } from "@payloadcms/richtext-lexical"; // editor-import
 import path from "path";
+import sharp from 'sharp'
 import { buildConfig } from "payload/config";
 import { fileURLToPath } from "url";
 
@@ -25,4 +26,7 @@ export default buildConfig({
     },
   }),
   // TODO: Vercel Blob Storage
+
+  sharp,
+
 });
