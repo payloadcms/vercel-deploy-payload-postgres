@@ -12,12 +12,13 @@
     "generate:types": "payload generate:types"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "3.0.0-beta.9",
-    "@payloadcms/next": "3.0.0-beta.9",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.9",
+    "@payloadcms/db-postgres": "3.0.0-beta.10",
+    "@payloadcms/next": "3.0.0-beta.10",
+    "@payloadcms/plugin-cloud-storage": "3.0.0-beta.10",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.10",
     "cross-env": "^7.0.3",
     "next": "14.2.0-canary.33",
-    "payload": "3.0.0-beta.9",
+    "payload": "3.0.0-beta.10",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "0.32.6"
