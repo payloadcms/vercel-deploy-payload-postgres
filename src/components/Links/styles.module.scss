@@ -46,6 +46,10 @@
       }
     }
 
+    span {
+      line-height: 1.5;
+    }
+
     &::before {
       display: block;
       position: absolute;
@@ -81,6 +85,21 @@
       &::after {
         width: 100%;
       }
+
+      .scanlines {
+        opacity: 0.1;
+      }
     }
   }
+}
+
+.scanlines {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: url('/scanline-light.png');
+  opacity: 0;
+  transition: opacity 0.3s;
 }

@@ -16,15 +16,17 @@
 
 .payloadLogo {
   width: 100%;
-  max-width: 400px;
+  height: auto;
+  max-width: 320px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.nextLogo {
+.vercelLogo {
   width: 100%;
-  max-width: 400px;
+  height: auto;
+  max-width: 320px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -32,7 +34,7 @@
 }
 
 .payloadLogo,
-.nextLogo {
+.vercelLogo {
   @media screen and (max-width: 1200px) {
     width: 25vw;
     height: auto;

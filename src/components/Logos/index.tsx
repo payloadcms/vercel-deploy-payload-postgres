@@ -6,7 +6,7 @@ export const Logos = () => {
     <div className={styles.logos}>
       <Image
         src="/payload.svg"
-        alt="Logo"
+        alt="Payload Logo"
         width={200}
         height={100}
         className={styles.payloadLogo}
@@ -14,11 +14,11 @@ export const Logos = () => {
       />
       <Image src="/crosshair.svg" alt="" width={20} height={20} />
       <Image
-        src="/next.svg"
-        alt="Logo"
-        width={336}
-        height={70}
-        className={styles.nextLogo}
+        src="/vercel.svg"
+        alt="Vercel Logo"
+        width={283}
+        height={64}
+        className={styles.vercelLogo}
         priority
       />
     </div>
