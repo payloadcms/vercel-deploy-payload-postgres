@@ -19,7 +19,7 @@ export const Links = () => {
         <span>Find in-depth information about Next.js features and API.</span>
         <div className={styles.scanlines} />
       </Link>
-      <Link href="/">
+      <Link href="https://discord.gg/payload">
         <h6>Need help?</h6>
         <span>Join our Discord to ask questions and get help from the community.</span>
         <div className={styles.scanlines} />
