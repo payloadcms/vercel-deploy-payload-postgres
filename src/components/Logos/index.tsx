@@ -14,11 +14,11 @@ export const Logos = () => {
       />
       <Image src="/crosshair.svg" alt="" width={20} height={20} />
       <Image
-        src="/vercel.svg"
-        alt="Vercel Logo"
-        width={283}
-        height={64}
-        className={styles.vercelLogo}
+        src="/next.svg"
+        alt="Next.js Logo"
+        width={394}
+        height={80}
+        className={styles.nextLogo}
         priority
       />
     </div>
