@@ -1,7 +1,7 @@
 import { postgresAdapter } from '@payloadcms/db-postgres'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
-import { vercelBlobAdapter } from '@payloadcms/plugin-cloud-storage/vercelBlob'
-import { cloudStorage } from '@payloadcms/plugin-cloud-storage'
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
+
 import path from 'path'
 import sharp from 'sharp'
 import { buildConfig } from 'payload/config'
@@ -32,15 +32,10 @@ export default buildConfig({
   sharp,
 
   plugins: [
-    cloudStorage({
+    vercelBlobStorage({
+      token: String(process.env.BLOB_READ_WRITE_TOKEN),
       collections: {
-        [Media.slug]: {
-          adapter: vercelBlobAdapter({
-            token: process.env.BLOB_READ_WRITE_TOKEN || '',
-          }),
-          disableLocalStorage: true,
-          disablePayloadAccessControl: true,
-        },
+        [Media.slug]: true,
       },
     }),
   ],
