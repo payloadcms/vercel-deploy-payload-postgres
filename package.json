@@ -12,15 +12,15 @@
     "generate:types": "payload generate:types"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "3.0.0-beta.21",
-    "@payloadcms/next": "3.0.0-beta.21",
-    "@payloadcms/plugin-cloud-storage": "3.0.0-beta.21",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.21",
-    "@payloadcms/storage-vercel-blob": "3.0.0-beta.21",
+    "@payloadcms/db-postgres": "3.0.0-beta.22",
+    "@payloadcms/next": "3.0.0-beta.22",
+    "@payloadcms/plugin-cloud-storage": "3.0.0-beta.22",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.22",
+    "@payloadcms/storage-vercel-blob": "3.0.0-beta.22",
     "@vercel/blob": "^0.22.3",
     "cross-env": "^7.0.3",
     "next": "14.3.0-canary.7",
-    "payload": "3.0.0-beta.21",
+    "payload": "3.0.0-beta.22",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "0.32.6"
